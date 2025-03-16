@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+  
+    <section class="login-container">
+        <div class="login">
+            <img class="logo" src="/images/logo-devlinks-large.svg" alt="logo">
+            <div class="login-form">
+                <div class="title">
+                    <h1>Login</h1>
+                    <p>Add your details below to get back into the app</p>
+                </div>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <div class="input-group" id="email-group">
+                            <img src="/images/icon-email.svg" alt="email">
+                            <input type="email" id="email" placeholder="e.g. alex@email.com" required autocomplete="email">
+                            <span id="emailError" class="errormessage" style="display: none;">Can’t be empty</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-group" id="password-group">
+                            <img src="/images/icon-password.svg" alt="password">
+                            <input type="password" id="password" placeholder="Enter your password" required autocomplete="current-password">
+                            <span id="passwordError" class="errormessage" style="display: none;">Please check again</span>
+                        </div>
+                    </div>
+                    <button id="login-btn">Login</button>
+                </form>
+                <p>Don’t have an account ? <a>Create account</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="auth.js"></script>
+</body>
+</html>
